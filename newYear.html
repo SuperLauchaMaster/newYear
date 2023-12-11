@@ -29,20 +29,84 @@
     <div class="row">
 
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#Inicio">Destino</a></li>
+            <li class="active"><a data-toggle="tab" href="#Invitacion">Invitacion</a></li>
+            <li><a data-toggle="tab" href="#Inicio">Destino</a></li>
             <li><a data-toggle="tab" href="#menu1">Invitados</a></li>
             <li><a id="clickeable" data-toggle="tab" href="#Alojamiento">Alojamiento</a></li>
+            <li><a id="clickeable" data-toggle="tab" href="#Itinerario">Itinerario</a></li>
             <li><a data-toggle="tab" href="#Comida">Comida</a></li>
             <li><a data-toggle="tab" href="#Llevar">Que llevar</a></li>
         </ul>
 
         <div class="tab-content">
-            <div id="Inicio" class="tab-pane fade in active">
+            <div id="Invitacion" class="tab-pane fade in active">
+
+
+                <style>
+            #Invitacion {
+            color: #B8860B; /* Color dorado champagne */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            }
+            body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+            
+                    h1 {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                    }
+            
+                    p {
+                        font-size: 24px;
+                        margin-bottom: 40px;
+                    }
+                    #countdown {
+                        font-size: 48px;
+                        font-weight: bold;
+                    }
+                </style>
+                <br>
+                <div>
+                    <h1>Fiesta de Fin de Año</h1>
+                    <p>¡Te invitamos a celebrar juntos el comienzo de un nuevo año!</p>
+                    <p>La fiesta será el domingo 31 de diciembre de 2023.</p>
+                    <p>Lugar: Las toninas</p>
+                    <p>Dress Code: Ropa Blanca</p>
+                    <p>¡No te lo pierdas!</p>
+                    <div id="countdown"></div>
+                </div>
+            
+                <script>
+                    // Fecha y hora de la fiesta (año, mes - 1, día, horas, minutos, segundos)
+                    const partyDate = new Date(2023, 11, 31, 20, 0, 0);
+            
+                    function updateCountdown() {
+                        const now = new Date();
+                        const timeDifference = partyDate - now;
+            
+                        if (timeDifference > 0) {
+                            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            
+                            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                        } else {
+                            document.getElementById('countdown').innerHTML = '¡La fiesta ha comenzado!';
+                        }
+                    }
+            
+                    setInterval(updateCountdown, 1000);
+                </script>
+</div>
+
+                <div id="Inicio" class="tab-pane fade">
                 <div class="container">
-                    <div class="row">
-                        <h1> Celebraciones Año nuevo 2024</h1>
-                        
-                    </div>
                     <div class="row">
                         <h4>Las celebraciones para recibir el nuevo año, en esta oportunidad, se realizaran en Las toninas,
                             Buenos Aires</h4>
@@ -265,11 +329,12 @@
                             <li>Eva Ebel - Esperanza</li>
                             <li>Alejandro - Esperanza</li>
                             <li>Alma - Esperanza</li>
+                            <li>Dora -La Suegra de Eva- Fisman - Esperanza</li>
                             <li>Oscar -Cachi- Chiappero - Rafaela</li>
                             <li>Silvana -Cata- Doleatto - Rafaela</li>
                             <li>Victoria Chiappero - Rafaela</li>
                             <li>Maia Chiappero - Cordoba</li>
-                            <li>Fernando - Cordoba</li>
+                            <li>Fernando Mosello- Cordoba</li>
                         </ul>
 
                     </div>
@@ -277,7 +342,7 @@
                         <h3>Pendientes de Confirmacion</h3>
                         <ul>
                             <li>Tato Ebel - Esperanza</li>
-                            <li>Estela - Esperanza</li>
+                            <li>Stela Troncoso - Esperanza</li>
                             <li>Hijo tato 1 - Esperanza</li>
                             <li>Hijo tato 2 - Esperanza</li>
                             <li>Orlando - Esperanza</li>
@@ -320,6 +385,87 @@
 
                 </div>
             </div>
+            <div id="Itinerario" class="tab-pane fade">
+                <h3>Itinerario: </h3>
+                <br>
+                <p> Día  29: </p>
+                <ul>
+                    <li>Hs. 22:00  Recepción  en la casa anfitriona 
+                    </li>
+                </ul>
+                <br>
+                <p> Día 30: </p>
+                <ul>
+                    <li>Hs. 10:00  Aesayuno  en Costa Manjar (centro de las Toninas)
+ 
+                    </li>
+                    <li>Hs.  14:00  Almuerzo en la Playa
+                    </li>
+                    <li>Hs. 15:00 Juegos en la Playa.  Opcional  siesta
+                    </li>
+                    <li>Hs. 18:00  Merienda en el laberinto  
+ 
+                    </li>
+                    <li>Hs. 22:00  Almuerzo en el Centro de Las Toninas  con show en vivo
+                    </li>
+                </ul>
+                <br>
+                <p> Día 31: </p>
+                <ul>
+                    <li>Hs. 10:00  Desayuno en la Playa
+
+                    </li>
+                    <li>Hs. 13:00 Almuerzo  individual  
+
+                    </li>
+                    <li>Hs. 17:00 Merienda en la Playa
+ 
+                    </li>
+                    <li>Hs. 21:00 Cena de Fin de Año - Casa Anfitriona
+ 
+                    </li>
+                    <li>Hs. 23:40  Traslado a la Playa para recibir el año nuevo 
+                    </li>
+                </ul>
+                <br>
+                <p> Día 01: </p>
+                <ul>
+                    <li>Hs. 00:00  Brindis en la bajada de la 44
+ 
+                    </li>
+                    <li>Hs. 00:30  Inicio de Baile Popular en la bajada de la 44
+ 
+                    </li>
+                    <li>Hs. 01:00  Mesa dulce y bebidas  espirituosas  en el bufet de la bajada de la 44 
+                    </li>
+                    <li>Hs. 03:00  Retorno a la casa para segundo brindis.
+ 
+                    </li>
+                    <li>Hs. 06:00  Final de fiesta.  Tercer brindis
+ 
+                    </li>
+                    <li>Hs.  15:00  Relax  en la Playa.  Almuerzo liviano
+
+                    </li>
+                    <li>Hs.  18.00  Merienda frutal 
+
+                    </li>
+                    <li>Hs. 22:00  Cena  reconstructiva 
+
+                    </li>
+                </ul>
+                <br>
+                <p> Día 2: </p>
+                <ul>
+                    <li>Hs. 10:00  Desayuno  en la casa anfitriona
+ 
+                    </li>
+                    <li>Hs. 14:00  Almuerzo en Santa Teresita
+ 
+                    </li>
+                </ul>
+                <br>
+            </div>
             <div id="Comida" class="tab-pane fade">
                 <h3>Comida</h3>
                 <br>
@@ -352,6 +498,7 @@
                     <li>Sillas, Sombrillas, Gazebos - Para la playa</li>
                     <li>Pelota de Futbol - Para jugar en la playa</li>
                     <li>Paleta e indumentaria de padel - Hay canchas en santa teresita</li>
+                    <li>Ropa de Cama - Excepto por aquellos alojados en el Hotel</li>
                 </ul>
             </div>
         </div>
@@ -381,22 +528,22 @@ var uno = L.marker([-36.501017, -56.692668]).addTo(map)
     .bindPopup('<h3>Este sera el alojamiento para: Familia Chiappero De Buenos Aires</h3>');
 
 var cinco =L.marker([-36.501030, -56.692843]).addTo(map)
-    .bindPopup('<h3>Este sera el alojamiento para: Ana Nacho Mateo y Mati</h3>')
+    .bindPopup('<h3>Este sera el alojamiento para: Ana Nacho Mateo y Mati</h3> <h5>Reservado del 29 al 4</h5>')
 
 var dos = L.marker([-36.500972, -56.691224]).addTo(map)
-    .bindPopup('<h3>Este sera el alojamiento para: Maia y Fer</h3>')
+    .bindPopup('<h3>Este sera el alojamiento para: Maia y Fer</h3> <h5>reservado desde el 29/12 al mediodía hasta el 4/01 x la mañana o el 4 inclusive.</h5>')
 
 var siete = L.marker([-36.503572, -56.691890]).addTo(map)
     .bindPopup('<h3>Este sera el alojamiento para: Juli</h3>')
 
 var tres = L.marker([-36.5043524, -56.6920987]).addTo(map)
-    .bindPopup('<h3>Este sera el alojamiento para: Cachi, Cata, Vicky</h3>')
+    .bindPopup('<h3>Este sera el alojamiento para: Cachi, Cata, Vicky</h3> <h5>reservado del 29/12  al 2/1</h5>')
 
 var seis = L.marker([-36.5046524, -56.6920987]).addTo(map)
-    .bindPopup('<h3>Este sera el alojamiento para: Eva y Flia</h3>')
+    .bindPopup('<h3>Este sera el alojamiento para: Eva y Flia</h3> <h5>Reservado del 29/12  al 3/1</h5>')
 
 var cuatro = L.marker([-36.5049524, -56.691790]).addTo(map)
-    .bindPopup('<h3>Este sera el alojamiento para: Chiqui, Patri y Ali</h3>')
+    .bindPopup('<h3>Este sera el alojamiento para: Chiqui, Patri y Ali</h3> <h5> Reservado del 29 al 2</h5>')
 
 
     var homeTab = document.getElementById('Alojamiento');
