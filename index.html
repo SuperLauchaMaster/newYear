@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Fiesta de Fin de Año</title>
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
@@ -30,7 +30,6 @@
             <li><a data-toggle="tab" href="#menu1">Invitados</a></li>
             <li><a id="clickeable" data-toggle="tab" href="#Alojamiento">Alojamiento</a></li>
             <li><a id="clickeable" data-toggle="tab" href="#Itinerario">Itinerario</a></li>
-            <li><a data-toggle="tab" href="#Comida">Comida</a></li>
             <li><a data-toggle="tab" href="#Llevar">Que llevar</a></li>
         </ul>
 
@@ -50,6 +49,9 @@
             }
             body {
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
                     }
             
                     h1 {
@@ -57,23 +59,32 @@
                         margin-bottom: 20px;
                     }
             
-                    p {
-                        font-size: 24px;
-                        margin-bottom: 40px;
+                    p {    
+                        margin-bottom: 1em;
+    font-size: 1.3em;
+    margin-top: 1em;
                     }
                     #countdown {
                         font-size: 48px;
                         font-weight: bold;
                     }
+
+
+                    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
                 </style>
                 <br>
                 <div>
                     <h1>Fiesta de Fin de Año</h1>
-                    <p>¡Te invitamos a celebrar juntos el comienzo de un nuevo año!</p>
-                    <p>La fiesta será el domingo 31 de diciembre de 2023.</p>
-                    <p>Lugar: Las toninas</p>
-                    <p>Dress Code: Ropa Blanca</p>
-                    <p>¡No te lo pierdas!</p>
+                    <h2>¡Te invitamos a celebrar juntos el comienzo de un nuevo año!</h2>
+                    <h3>La fiesta será el domingo 31 de diciembre de 2023.</h3>
+                    <h4>Lugar: Las Toninas</h4>
+                    <h4>Dress Code: <b>Ropa Blanca</b></h4>
+                    <h3>¡No te lo pierdas!</h3>
                     <div id="countdown"></div>
                 </div>
             
@@ -307,41 +318,35 @@
             </div>
             <div id="menu1" class="tab-pane fade">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h3>Confirmados</h3>
+                    <div class="col-md-12">
+                        <h3>Invitados</h3>
                         <ul>
-                            <li>Marcelo Chiappero - Buenos Aires</li>
-                            <li>Laura Cheheid - Buenos Aires</li>
-                            <li>Nerina Chiappero - Buenos Aires</li>
-                            <li>Lautaro Chiappero - Buenos Aires</li>
-                            <li>Julieta Andrada - Buenos Aires</li>
-                            <li>Ana Ripstein - Esperanza</li>
-                            <li>Mateo Ripstein - Esperanza</li>
-                            <li>Matias Ripstein - Esperanza</li>
-                            <li>Alejandro -Chiqui- Ripstein - Esperanza</li>
-                            <li>Patricia -Pato- Chiappero - Esperanza</li>
-                            <li>Alicia Chiappero - Esperanza</li>
-                            <li>Ignacio -Nacho- Vernazza - Esperanza</li>
-                            <li>Eva Ebel - Esperanza</li>
-                            <li>Alejandro Fuica - Esperanza</li>
-                            <li>Alma Fuica- Esperanza</li>
-                            <li>Dora -La Suegra de Eva- Fisman - Esperanza</li>
-                            <li>Oscar -Cachi- Chiappero - Rafaela</li>
-                            <li>Silvana -Cata- Doleatto - Rafaela</li>
-                            <li>Victoria Chiappero - Rafaela</li>
-                            <li>Maia Chiappero - Cordoba</li>
-                            <li>Fernando Mosello- Cordoba</li>
-                        </ul>
-
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Pendientes de Confirmacion</h3>
-                        <ul>
-                            <li>Tato Ebel - Esperanza</li>
-                            <li>Stela Troncoso - Esperanza</li>
-                            <li>Hijo tato 1 - Esperanza</li>
-                            <li>Hijo tato 2 - Esperanza</li>
-                            <li>Orlando Ebel - Esperanza</li>
+                            <li><div style="display: inline-flex;"><p><b>Marcelo Chiappero</b> - Buenos Aires  </p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Laura Cheheid</b> - Buenos Aires</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Nerina Chiappero</b> - Buenos Aires</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Lautaro Chiappero</b> - Buenos Aires</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div></div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Julieta Andrada</b> - Buenos Aires</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Ana Ripstein</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Mateo Ripstein</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div></div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Matias Ripstein</b> - Esperanza</p></div></li>
+                            <li><div style="display: inline-flex;"><p><b>Alejandro -Chiqui- Ripstein</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Patricia -Pato- Chiappero</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            
+                            <li><div style="display: inline-flex;"><p><b>Alicia Chiappero</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div></div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Ignacio -Nacho- Vernazza</b> - Esperanza</p></div></li>
+                            <li><div style="display: inline-flex;"><p><b>Alejandro Fuica</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Eva Ebel</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Alma Fuica</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Dora Fisman</b> - Esperanza</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Tato Ebel</b> - Esperanza</p></div></li>
+                            <li><div style="display: inline-flex;"><p><b>Stela Troncoso</b> - Esperanza</p></div></li>
+                            <li><div style="display: inline-flex;"><p><b>Orlando Ebel</b> - Esperanza</p></div></li>
+                            <li><div style="display: inline-flex;"><p><b>Oscar -Cachi- Chiappero</b> - Rafaela</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div></div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Silvana -Cata- Doleatto</b> - Rafaela</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Victoria Chiappero</b> - Cordoba</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div></div>  </li>
+                            <li><div style="display: inline-flex;"><p><b>Maia Chiappero</b> - Cordoba</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div> </div> </li>
+                            <li><div style="display: inline-flex;"><p><b>Fernando Mosello</b> - Cordoba</p> <div style="color:lightgreen; align-self: center; margin-left: 1em">(Confirmado)</div>  </div></li>
+                            <li><div style="display: inline-flex;"><p><b>Nicolas Chiappero</b> - España</p></div></li>
                         </ul>
 
                     </div>
@@ -350,31 +355,37 @@
             </div>
             <div id="Alojamiento" class="tab-pane fade">
                 <h3>Alojamiento</h3>
-                <h4>Para conocer cual sera tu alojamiento, por favor selecciona tu nombre a continuacion: </h4>
+                <div class="row">
+                    
+                    <h5>Para conocer cual sera tu alojamiento, por favor selecciona tu nombre a continuacion: </h5>
 
-                <select name="pets" id="al-select">
-                    <option value="">--Selecciona una opcion--</option>
-                    <option value="1">Marcelo</option>
-                    <option value="1">Laura</option>
-                    <option value="1">Lautaro</option>
-                    <option value="1">Nerina</option>
-                    <option value="2">Maia</option>
-                    <option value="2">Fernando</option>
-                    <option value="3">Cachi</option>
-                    <option value="3">Cata</option>
-                    <option value="3">Vicky</option>
-                    <option value="4">Chiqui</option>
-                    <option value="5">Matias</option>
-                    <option value="5">Mateo</option>
-                    <option value="5">Ana</option>
-                    <option value="4">Pato</option>
-                    <option value="4">Ali</option>
-                    <option value="5">Nacho</option>
-                    <option value="6">Alma</option>
-                    <option value="6">Alejandro</option>
-                    <option value="6">Eva</option>
-                    <option value="7">Juli</option>
-                  </select>
+                    <select name="pets" id="al-select">
+                        <option value="">--Selecciona una opcion--</option>
+                        <option value="1">Marcelo</option>
+                        <option value="1">Laura</option>
+                        <option value="1">Lautaro</option>
+                        <option value="1">Nerina</option>
+                        <option value="2">Maia</option>
+                        <option value="2">Fernando</option>
+                        <option value="3">Cachi</option>
+                        <option value="3">Cata</option>
+                        <option value="3">Vicky</option>
+                        <option value="4">Chiqui</option>
+                        <option value="5">Matias</option>
+                        <option value="5">Mateo</option>
+                        <option value="5">Ana</option>
+                        <option value="4">Pato</option>
+                        <option value="4">Ali</option>
+                        <option value="5">Nacho</option>
+                        <option value="6">Alma</option>
+                        <option value="6">Alejandro</option>
+                        <option value="6">Eva</option>
+                        <option value="7">Juli</option>
+                      </select>
+
+
+
+                </div>
 
                 <div class="row">
                     <div id="map"></div>
@@ -382,119 +393,70 @@
                 </div>
             </div>
             <div id="Itinerario" class="tab-pane fade">
-                <h3>Itinerario: </h3>
+                <h1>Itinerario: </h1>
                 <br>
-                <p> Día  29: </p>
+                <h2> Día  29</h2>
                 <ul>
-                    <li>Hs. 22:00  Recepción  en la casa anfitriona 
-                    </li>
+                    <li><p><b>Hs. 22:00</b> - Recepción  en la casa anfitriona</p></li>
                 </ul>
                 <br>
-                <p> Día 30: </p>
+                <br>
+                <h2> Día 30</h2>
                 <ul>
-                    <li>Hs. 10:00  Aesayuno  en Costa Manjar (centro de las Toninas)
- 
-                    </li>
-                    <li>Hs.  14:00  Almuerzo en la Playa
-                    </li>
-                    <li>Hs. 15:00 Juegos en la Playa.  Opcional  siesta
-                    </li>
-                    <li>Hs. 18:00  Merienda en el laberinto  
- 
-                    </li>
-                    <li>Hs. 22:00  Almuerzo en el Centro de Las Toninas  con show en vivo
-                    </li>
+                    <li><p><b>Hs. 10:00</b> - Desayuno  en Costa Manjar (centro de las Toninas)</p></li>
+                    <li><p><b>Hs. 14:00</b> - Almuerzo en la Playa</p></li>
+                    <li><p><b>Hs. 15:00</b> - Juegos en la Playa.  Opcional  siesta</p></li>
+                    <li><p><b>Hs. 18:00</b> - Merienda en el laberinto</p></li>
+                    <li><p><b>Hs. 22:00</b> - Almuerzo en el Centro de Las Toninas  con show en vivo</p></li>
                 </ul>
                 <br>
-                <p> Día 31: </p>
+                <br>
+                <h2> Día 31</h2>
                 <ul>
-                    <li>Hs. 10:00  Desayuno en la Playa
+                    <li><p><b>Hs. 10:00</b> - Desayuno en la Playa</p></li>
+                    <li><p><b>Hs. 13:00</b> - Almuerzo  individual</p></li>
+                    <li><p><b>Hs. 17:00</b> - Merienda en la Playa</p></li>
+                    <li><p><b>Hs. 21:00</b> - Cena de Fin de Año - Casa Anfitriona</p></li>
+                    <li><p><b>Hs. 23:40</b> - Traslado a la Playa para recibir el año nuevo</p></li>
+                </ul>
+                <br>
+                <br>
+                <h2> Día 01</h2>
+                <ul>
+                    <li><p><b>Hs. 00:00</b> - Brindis en la bajada de la 44</p></li>
+                    <li><p><b>Hs. 00:30</b> - Inicio de Baile Popular en la bajada de la 44</p></li>
+                    <li><p><b>Hs. 01:00</b> - Mesa dulce y bebidas  espirituosas  en el bufet de la bajada de la 44</p></li>
+                    <li><p><b>Hs. 03:00</b> - Retorno a la casa para segundo brindis</p></li>
+                    <li><p><b>Hs. 06:00</b> - Final de fiesta.  Tercer brindis</p></li>
+                    <li><p><b>Hs. 15:00</b> - Relax  en la Playa.  Almuerzo liviano</p></li>
+                    <li><p><b>Hs. 18:00</b> - Merienda frutal</p></li>
+                    <li><p><b>Hs. 22:00</b> - Cena  reconstructiva</p></li>
+                </ul>
+                <br>
+                <br>
+                <h2> Día 02</h2>
+                <ul>
+                    <li><p><b>Hs. 10:00</b> - Desayuno  en la casa anfitriona</p></li>
+                    <li><p><b>Hs. 14:00</b> - Almuerzo en Santa Teresita</p></li>
+                </ul>
+                <br>
 
-                    </li>
-                    <li>Hs. 13:00 Almuerzo  individual  
 
-                    </li>
-                    <li>Hs. 17:00 Merienda en la Playa
- 
-                    </li>
-                    <li>Hs. 21:00 Cena de Fin de Año - Casa Anfitriona
- 
-                    </li>
-                    <li>Hs. 23:40  Traslado a la Playa para recibir el año nuevo 
-                    </li>
-                </ul>
-                <br>
-                <p> Día 01: </p>
-                <ul>
-                    <li>Hs. 00:00  Brindis en la bajada de la 44
- 
-                    </li>
-                    <li>Hs. 00:30  Inicio de Baile Popular en la bajada de la 44
- 
-                    </li>
-                    <li>Hs. 01:00  Mesa dulce y bebidas  espirituosas  en el bufet de la bajada de la 44 
-                    </li>
-                    <li>Hs. 03:00  Retorno a la casa para segundo brindis.
- 
-                    </li>
-                    <li>Hs. 06:00  Final de fiesta.  Tercer brindis
- 
-                    </li>
-                    <li>Hs.  15:00  Relax  en la Playa.  Almuerzo liviano
-
-                    </li>
-                    <li>Hs.  18.00  Merienda frutal 
-
-                    </li>
-                    <li>Hs. 22:00  Cena  reconstructiva 
-
-                    </li>
-                </ul>
-                <br>
-                <p> Día 2: </p>
-                <ul>
-                    <li>Hs. 10:00  Desayuno  en la casa anfitriona
- 
-                    </li>
-                    <li>Hs. 14:00  Almuerzo en Santa Teresita
- 
-                    </li>
-                </ul>
-                <br>
-            </div>
-            <div id="Comida" class="tab-pane fade">
-                <h3>Comida</h3>
-                <br>
-                <h4>Los menues estaran conformados de la siguiente manera: </h4>
-                <br>
-                <p> 31 a la noche: </p>
-                <ul>
-                    <li>Carne a la parrilla</li>
-                    <li>Ensalada de Papa</li>
-                    <li>Vitel Tone</li>
-                    <li>Emapanadias</li>
-                    <li>Canapes</li>
-                    <li>Ensaladas Varias</li>
-                </ul>
-                <br>
-                <p>1 al mediodia: </p>
-                <ul>
-                    <li>Sobras del 31 a la noche</li>
-                </ul>
+                <p> Aquel que tenga alguna dieta especial o por gusto prefiera un menú especial por favor hacerlo conocer con la debida antelación. Lo mismo para con las bebidas </p>
             </div>
             <div id="Llevar" class="tab-pane fade">
                 <h3>¿Que llevar?</h3>
                 
                 <ul>
-                    <li>Ropa Fresca - durante el dia pueden llegar a hacer hasta 40 grados</li>
-                    <li>Abrigo liviano - a la noche las temperaturas pueden descender bruscamente</li>
-                    <li>Protector Solar - El Sol puede ser muy peligroso</li>
-                    <li>Gorra/Gorro, Lentes de sol - Para protegerse del sol</li>
-                    <li>Toallones - Para la playa</li>
-                    <li>Sillas, Sombrillas, Gazebos - Para la playa</li>
-                    <li>Pelota de Futbol - Para jugar en la playa</li>
-                    <li>Paleta e indumentaria de padel - Hay canchas en santa teresita</li>
-                    <li>Ropa de Cama - Excepto por aquellos alojados en el Hotel</li>
+                    <li><p><b>Ropa Fresca</b> - durante el dia pueden llegar a hacer hasta 40 grados</p></li>
+                    <li><p><b>Abrigo liviano</b> - a la noche las temperaturas pueden descender bruscamente</p></li>
+                    <li><p><b>Protector Solar</b> - El Sol puede ser muy peligroso</p></li>
+                    <li><p><b>Gorra/Gorro, Lentes de sol</b> - Para protegerse del sol</p></li>
+                    <li><p><b>Toallones</b> - Para la playa</p></li>
+                    <li><p><b>Sillas, Sombrillas, Gazebos</b> - Opcional Para la playa</p></li>
+                    <li><p><b>Pelota de Futbol</b> - Para jugar en la playa</p></li>
+                    <li><p><b>Paleta e indumentaria de padel</b> - Hay canchas en santa teresita</p></li>
+                    <li><p><b>Ropa de Cama</b> - Excepto por aquellos alojados en el Hotel</p></li>
                 </ul>
             </div>
         </div>
